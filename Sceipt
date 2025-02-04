@@ -1,7 +1,7 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "Nocturnal hub blox fruit",
+   Name = "Nocturnal hub blue lock rivals",
    Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
    LoadingTitle = "Made my Nocturnal",
    LoadingSubtitle = "OP HUB",
@@ -41,46 +41,89 @@ Rayfield:Notify({
    Image = 4483362458,
 })
 
-local Tab1 = Window:CreateTab("Best hubs", 4483362458) -- Title, Image
+local Tab1 = Window:CreateTab("Scripts", 4483362458) -- Title, Image
+
+local Section = Tab1:CreateSection("Styles")
 
 local Button = Tab1:CreateButton({
-   Name = "Ronix hub (tell me in discord if it needs key)",
+   Name = "Don lorenzo style",
    Callback = function()
-      loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b5f968ca22436160479678e830766cc4.lua"))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Youifpg/Styles/refs/heads/main/Zombie.lua"))()
    -- The function that takes place when the button is pressed
    end,
 })
 
 local Button = Tab1:CreateButton({
-   Name = "Redz hub",
+   Name = "CR7 style",
    Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))()
+   game:GetService("StarterGui"):SetCore("SendNotification",{
+Title = "Script loaded enjoy!",
+Text = "Script is beta wait for updates in Arbix Hub server !", 
+
+Button1 = "Yes",
+Button2 = "Cancel",
+Duration = 30 
+})
+while true do
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Youifpg/CR7/refs/heads/main/CR7.lua"))()
+
+loadstring(game:HttpGet("https://pastebin.com/raw/84rU4mHU"))()
+wait()
+end
    -- The function that takes place when the button is pressed
    end,
 })
 
-local Button = Tab1:CreateButton({
-   Name = "Zen hub (KEY NEEDED)",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/Zenhubtop/zen_hub_pr/main/zennewwwwui.lua", true))()
-   -- The function that takes place when the button is pressed
-   end,
-})
-
-local Tab2 = Window:CreateTab("Other", 4483362458) -- Title, Image
+local Tab2 = Window:CreateTab("best hubs", 4483362458) -- Title, Image
 
 local Button = Tab2:CreateButton({
-   Name = "chest farm",
+   Name = "N5 HUB (My Goat Nameless✌️)",
    Callback = function()
-   --[[
-	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
-]]
-loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/BloxfruitChestFarmTbaoHub"))()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/UPD-Blue-Lock:-Rivals-GET-FREE-KARASU-AND-OTOYA-STYLES-28209"))()
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "Visual Beta (One of the best)🥶",
+   Callback = function()
+          loadstring(game:HttpGet("https://rawscripts.net/raw/Blue-Lock:-Rivals-Lock-Best-Free-Script-27507"))()
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "Express Hub (Fun & Easy💯🔥)",
+   Callback = function()
+        loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Best-Free-Universal-GUI-V6-27679"))()
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "Apoc Hub (Smooth Key System & No Bugs)",
+   Callback = function()
+         loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FIXED-FREEZING-and-Crashing-Apoc-Hub-Over-20-Games-28028"))()
+   end,
+})
+
+local Button = Tab2:CreateButton({
+   Name = "Auto Gk 🥅",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Youifpg/Arbix--Hub/refs/heads/main/Blue!ock.lua"))()
    -- The function that takes place when the button is pressed
+   end,
+})
+
+local StyleTab = Window:CreateTab("Any Style", nil) -- Title, Image
+local StyleSection = StyleTab:CreateSection("Get Any Style! Example Rin Shidou and so on....")
+
+local StyleButton = StyleTab:CreateButton({
+   Name = "Get Any Style - Made By GoatTouka🐐 ( YOU NEED REO STYLE FOR IT TO WORK!!",
+   Callback = function()
+     loadstring(game:HttpGet("https://raw.githubusercontent.com/Youifpg/Arbix-OP/refs/heads/main/SigmaSkibidiTOUKA.lua"))()
    end,
 })
 
 local Tab3 = Window:CreateTab("Extras", 4483362458) -- Title, Image
+Tab3:CreateSection("Extra Stuff That Might Be Useful✌️")
 
 local Button = Tab3:CreateButton({
    Name = "Mobile Keyboard",
@@ -93,6 +136,20 @@ local Button = Tab3:CreateButton({
    Name = "Infinite Yield (Admin)",
    Callback = function()
        loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+   end,
+})
+
+local Toggle = Tab3:CreateToggle({
+   Name = "infinite jump",
+   CurrentValue = false,
+   Flag = "infinite jump", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+   local InfiniteJumpEnabled = true
+game:GetService("UserInputService").JumpRequest:connect(function()
+	if InfiniteJumpEnabled then
+		game:GetService"Players".LocalPlayer.Character:FindFirstChildOfClass'Humanoid':ChangeState("Jumping")
+	end
+end)
    end,
 })
 
