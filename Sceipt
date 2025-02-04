@@ -60,7 +60,7 @@ local Button = Tab1:CreateButton({
 })
 
 local Button = Tab1:CreateButton({
-   Name = "Zen hub",
+   Name = "Zen hub (KEY NEEDED)",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/Zenhubtop/zen_hub_pr/main/zennewwwwui.lua", true))()
    -- The function that takes place when the button is pressed
