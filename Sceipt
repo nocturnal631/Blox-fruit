@@ -1,0 +1,115 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+   Name = "Nocturnal hub blox fruit",
+   Icon = 0, -- Icon in Topbar. Can use Lucide Icons (string) or Roblox Image (number). 0 to use no icon (default).
+   LoadingTitle = "Made my Nocturnal",
+   LoadingSubtitle = "OP HUB",
+   Theme = "Ocean", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+
+   DisableRayfieldPrompts = true,
+   DisableBuildWarnings = false, -- Prevents Rayfield from warning when the script has a version mismatch with the interface
+
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Big Hub"
+   },
+
+   Discord = {
+      Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+
+   KeySystem = true, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Nocturnal hub key",
+      Subtitle = "Key System",
+      Note = "get the key in discord", -- Use this to tell the user how to get a key
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"Neoncool"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+
+Rayfield:Notify({
+   Title = "Hello",
+   Content = "thanks for using the hub",
+   Duration = 6.5,
+   Image = 4483362458,
+})
+
+local Tab1 = Window:CreateTab("Best hubs", 4483362458) -- Title, Image
+
+local Button = Tab1:CreateButton({
+   Name = "Ronix hub (tell me in discord if it needs key)",
+   Callback = function()
+      loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/b5f968ca22436160479678e830766cc4.lua"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab1:CreateButton({
+   Name = "Redz hub",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/BloxFruits/refs/heads/main/Source.lua"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Button = Tab1:CreateButton({
+   Name = "Zen hub",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Zenhubtop/zen_hub_pr/main/zennewwwwui.lua", true))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Tab2 = Window:CreateTab("Other", 4483362458) -- Title, Image
+
+local Button = Tab2:CreateButton({
+   Name = "chest farm",
+   Callback = function()
+   --[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/thaibao/main/BloxfruitChestFarmTbaoHub"))()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local Tab3 = Window:CreateTab("Extras", 4483362458) -- Title, Image
+
+local Button = Tab3:CreateButton({
+   Name = "Mobile Keyboard",
+   Callback = function()
+       loadstring(game:HttpGet("https://raw.githubusercontent.com/rrixh/skripts/refs/heads/main/deltamobile-keyboard-kraxked",true))();
+   end,
+})
+
+local Button = Tab3:CreateButton({
+   Name = "Infinite Yield (Admin)",
+   Callback = function()
+       loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+   end,
+})
+
+local Tab4 = Window:CreateTab("discord links", 4483362458) -- Title, Image
+
+local Button = Tab4:CreateButton({
+   Name = "Nocturnal discord",
+   Callback = function()
+       setclipboard("https://discord.gg/7qXEC3AwFH")
+        toclipboard("https://discord.gg/7qXEC3AwFH")
+   end,
+})
+
+local Button = Tab4:CreateButton({
+   Name = "Presidentzuyi discord",
+   Callback = function()
+       setclipboard("https://discord.gg/3RkTt8M9")
+        toclipboard("https://discord.gg/3RkTt8M9")
+   end,
+})
