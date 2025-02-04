@@ -84,7 +84,7 @@ local Button = Tab2:CreateButton({
 })
 
 local Button = Tab2:CreateButton({
-   Name = "Visual Beta (One of the best)",
+   Name = "Visual Beta",
    Callback = function()
           loadstring(game:HttpGet("https://rawscripts.net/raw/Blue-Lock:-Rivals-Lock-Best-Free-Script-27507"))()
    end,
