@@ -77,7 +77,7 @@ end
 local Tab2 = Window:CreateTab("best hubs", 4483362458) -- Title, Image
 
 local Button = Tab2:CreateButton({
-   Name = "N5 HUB (My Goat Nameless)",
+   Name = "N5 HUB",
    Callback = function()
         loadstring(game:HttpGet("https://rawscripts.net/raw/UPD-Blue-Lock:-Rivals-GET-FREE-KARASU-AND-OTOYA-STYLES-28209"))()
    end,
@@ -91,21 +91,21 @@ local Button = Tab2:CreateButton({
 })
 
 local Button = Tab2:CreateButton({
-   Name = "Express Hub (Fun & Easy)",
+   Name = "Express Hub",
    Callback = function()
         loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Best-Free-Universal-GUI-V6-27679"))()
    end,
 })
 
 local Button = Tab2:CreateButton({
-   Name = "Apoc Hub (Smooth Key System & No Bugs)",
+   Name = "Apoc Hub (key)",
    Callback = function()
          loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FIXED-FREEZING-and-Crashing-Apoc-Hub-Over-20-Games-28028"))()
    end,
 })
 
 local Button = Tab2:CreateButton({
-   Name = "Auto Gk 🥅",
+   Name = "Auto Gk ",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/Youifpg/Arbix--Hub/refs/heads/main/Blue!ock.lua"))()
    -- The function that takes place when the button is pressed
